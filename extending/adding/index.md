@@ -1,10 +1,10 @@
 ---
-title: Adding Custom Endpoints
+title: カスタムエンドポイントの追加
 ---
 
-The WordPress REST API is more than just a set of default routes. It is also a tool for creating custom routes and endpoints. The WordPress front-end provides a default set of URL mappings, but the tools used to create them (e.g. the Rewrites API, as well as the query classes: `WP_Query`, `WP_User`, etc) are also available for creating your own URL mappings, or custom queries.
+WordPress REST APIはデフォルトルートの組み合わせだけではありません。独自のルートやエンドポイントを作成するツールでもあります。WordPressのフロントエンドはデフォルトのURLマッピングを提供しますが、それらを作成するために使用されるツール（例えば、Rewrite API、`WP_Query`、`WP_User`といったクエリクラスなど）は、独自のURLマッピングやカスタムクエリの作成に使用できます。
 
-This document details how to create a totally custom route, with its own endpoints. We'll first work through a short example, then expand it out to the full controller pattern as used internally.
+この文書では、完全に独自のルートを、独自のエンドポイントとともに作成する方法を詳しく解説します。はじめに、短いサンプルを紹介し、次にそれをREST API内部で使われているのと同等の完全なコントローラーに拡張していきます。
 
 
 Bare Basics
